@@ -1,0 +1,36 @@
+<view class='container'>
+  <block wx:if="{{!imageFilePath}}">
+    <view class='add-container'>
+      <view class='content' bindtap='takePicture'>
+        <image style='width:220rpx;' mode='widthFix' src='../../../images/camera.png '></image>
+        <text style='color: #aaa; font-size: 32rpx;'>\n拍照识别银行卡号</text>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class='detail-container' bindtap='takePicture'>
+      <image src='{{imageFilePath}}'></image>
+    </view>
+    <canvas style="width: {{canvasWidth}}px; height: {{canvasHeight}}px; position: absolute; z-index: -1; left: -10000rpx; top: -10000rpx;" canvas-id="image-canvas"></canvas>
+  </block>
+  <view class='form-container'>
+    <form>
+      <text class='label'>银行卡号</text>
+      <input class='item' type='number' disabled placeholder='无' placeholder-style='color: #ccc;' value='{{cardInfo.number}}'></input>
+      <text class='label'>银行卡类型</text>
+      <input class='item' disabled placeholder='无' placeholder-style='color: #ccc;' value='{{cardInfo.type}}'></input>
+      <text class='label'>银行名</text>
+      <input class='item' disabled placeholder='无' placeholder-style='color: #ccc;' value='{{cardInfo.org}}'></input>
+      <text class='label'>有效期</text>
+      <input class='item' disabled placeholder='无' placeholder-style='color: #ccc;' value='{{cardInfo.validDate}}'></input>
+      <text class='label'>密码</text>
+      <input class='item' password maxlength="6" placeholder='{{cardInfo.number ? "请输入银行卡密码" : "请先拍照识别银行卡"}}' disabled='{{!cardInfo.number}}' placeholder-style='color: #ccc;' bindinput='handleInputChange'></input>
+      <text class='errText'>{{password.errMsg}}</text>
+    </form>
+    <view>
+      <button disabled='{{!cardInfo.number || password.errMsg}}' class='submit-btn' bindtap='addBankCard'>
+        {{cardInfo.number ? '确定添加' : '请先拍照识别银行卡'}}
+      </button>
+    </view>
+  </view>
+</view>

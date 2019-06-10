@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/boot/boot",
+    "pages/logs/logs",
+    "pages/bank-card/add-bank-card/add-bank-card",
+    "pages/bank-card/bank-card-detail/bank-card-detail",
+    "pages/other-card/other-card",
+    "pages/other-card/add-other-card/add-other-card",
+    "pages/nearby-map/nearby-map"
+  ],
+  "window": {
+    "backgroundColor": "#eee",
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "Card Packet",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将会用于小程序位置获取服务"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,28 @@
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bcms?useSSL=false&&serverTimezone=UTC&&allowPublicKeyRetrieval=true
+    username: root
+    # 改为自己的数据库密码
+    password: root
+
+  jpa:
+    database: MYSQL
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+      show-sql: true
+
+# 微信有关的配置属性
+wx:
+  appId: wxa92294c620a6cac3
+  appSecret: 1087161b2b5e04f09731a99db4d77918
+  grantType: authorization_code
+  requestUrl: https://api.weixin.qq.com/sns/jscode2session

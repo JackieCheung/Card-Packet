@@ -1,0 +1,5 @@
+var strSplit = function (str, seperator) {
+  return str.split(seperator)
+}
+
+module.exports.strSplit = strSplit

@@ -1,0 +1,177 @@
+.xingye-bg {
+  background: -webkit-linear-gradient(left, rgb(81, 140, 186) 0%, rgb(65, 94, 167) 60%);
+  background: linear-gradient(to right, rgb(81, 140, 186) 0%, rgb(65, 94, 167) 60%) !important;
+}
+
+.nongye-bg {
+  background: -webkit-linear-gradient(left, rgb(7, 183, 164) 0%, rgb(31, 133, 162) 60%);
+  background: linear-gradient(to right, rgb(7, 183, 164) 0%, rgb(31, 133, 162) 60%) !important;
+}
+
+.beijing-bg {
+  background: #f18088;
+  background: -webkit-linear-gradient(left, #f18088, #e20010);
+  background: linear-gradient(to right, #f18088, #e20010);
+}
+
+.dgnongshanghang-bg {
+  background: #f18088;
+  background: -webkit-linear-gradient(left, #f18088, #e20010);
+  background: linear-gradient(to right, #f18088, #e20010);
+}
+
+.dongguan-bg {
+  background: #e68689;
+  background: -webkit-linear-gradient(left, #e68689, #cd0c12);
+  background: linear-gradient(to right, #e68689, #cd0c12);
+}
+
+.zhongxin-bg {
+  background: #f96;
+  background: -webkit-linear-gradient(left, #ff5e62, #f96);
+  background: linear-gradient(to right, #ff5e62, #f96);
+}
+
+.minsheng-bg {
+  background: #24c6dc;
+  background: -webkit-linear-gradient(to right, #514a9d, #24c6dc);
+  background: linear-gradient(to right, #514a9d, #24c6dc);
+}
+
+.zhongguo-bg {
+  background: #f18088;
+  background: -webkit-linear-gradient(left, #f18088, #e20010);
+  background: linear-gradient(to right, #f18088, #e20010);
+}
+
+.jiaotong-bg {
+  background: #f18088;
+  background: -webkit-linear-gradient(left, #f18088, #e31c18);
+  background: linear-gradient(to right, #f18088, #e31c18);
+}
+
+.guangda-bg {
+  background: #f7971e;
+  background: -webkit-linear-gradient(left, #ffd200, #f7971e);
+  background: linear-gradient(to right, #ffd200, #f7971e);
+}
+
+.huashang-bg {
+  background: #f18088;
+  background: -webkit-linear-gradient(left, #f18088, #e20010);
+  background: linear-gradient(to right, #f18088, #e20010);
+}
+
+.huaxia-bg {
+  background: #f96;
+  background: -webkit-linear-gradient(left, #ff5e62, #f96);
+  background: linear-gradient(to right, #ff5e62, #f96);
+}
+
+.gongshang-bg {
+  background: #f18088;
+  background: -webkit-linear-gradient(left, #f18088, #d30005);
+  background: linear-gradient(to right, #f18088, #d30005);
+}
+
+.guangfa-bg {
+  background: #e25b65;
+  background: -webkit-linear-gradient(left, #e25b65, #90171e);
+  background: linear-gradient(to right, #e25b65, #90171e);
+}
+
+.jianshe-bg {
+  background: #1a2980;
+  background: -webkit-linear-gradient(right, #0d9c99, #1a2980);
+  background: linear-gradient(to left, #0d9c99, #1a2980);
+}
+
+.zhaoshang-bg {
+  background: #f18088;
+  background: -webkit-linear-gradient(left, #f18088, #e20010);
+  background: linear-gradient(to right, #f18088, #e20010);
+}
+
+.pufa-bg {
+  background: rgb(81, 140, 186);
+  background: -webkit-linear-gradient(left, rgb(81, 140, 186) 0%, rgb(65, 94, 167) 60%);
+  background: linear-gradient(to right, rgb(81, 140, 186) 0%, rgb(65, 94, 167) 60%);
+}
+
+.youchu-bg {
+  background: #02aab0;
+  background: -webkit-linear-gradient(right, #00cdac, #02aab0);
+  background: linear-gradient(to left, #00cdac, #02aab0);
+}
+
+.renmin-bg {
+  background: #f18088;
+  background: -webkit-linear-gradient(left, #f18088, #e20010);
+  background: linear-gradient(to right, #f18088, #e20010);
+}
+
+.pingan-bg {
+  background: #ff9982;
+  background: -webkit-linear-gradient(left, #ff9982, #ff512a);
+  background: linear-gradient(to right, #ff9982, #ff512a);
+}
+
+.huifeng-bg {
+  background: #f18088;
+  background: -webkit-linear-gradient(left, #f18088, #e20010);
+  background: linear-gradient(to right, #f18088, #e20010);
+}
+
+.chuzhi-bg {
+  background: #fcda80;
+  background: -webkit-linear-gradient(top, #fcda80, #f7ae00);
+  background: linear-gradient(to bottom, #fcda80, #f7ae00);
+}
+
+.gupiao-bg {
+  background: #1883ef;
+  background: -webkit-linear-gradient(top, #90cbf9, #1883ef);
+  background: linear-gradient(to bottom, #90cbf9, #1883ef);
+}
+
+.xianjin-bg {
+  background: #f48fb1;
+  background: -webkit-linear-gradient(top, #f48fb1, #e61a5b);
+  background: linear-gradient(to bottom, #f48fb1, #e61a5b);
+}
+
+.zaixian-bg {
+  background: #ff9000;
+  background: -webkit-linear-gradient(top, #ffcc80, #ff9000);
+  background: linear-gradient(to bottom, #ffcc80, #ff9000);
+}
+
+.licai-bg {
+  background: #be93c5;
+  background: -webkit-linear-gradient(top, #7bc6cc, #be93c5);
+  background: linear-gradient(to bottom, #7bc6cc, #be93c5);
+}
+
+.jijin-bg {
+  background: #6190e8;
+  background: -webkit-linear-gradient(top, #a7bfe8, #6190e8);
+  background: linear-gradient(to bottom, #a7bfe8, #6190e8);
+}
+
+.fuzhai-bg {
+  background: #ff4dd4;
+  background: -webkit-linear-gradient(top, #ffc3a0, #ff4dd4);
+  background: linear-gradient(to bottom, #ffc3a0, #ff4dd4);
+}
+
+.zhaiquan-bg {
+  background: #f33d30;
+  background: -webkit-linear-gradient(top, #faa19b, #f33d30);
+  background: linear-gradient(to bottom, #faa19b, #f33d30);
+}
+
+.default-bg {
+  background: #7f7fd5;
+  background: -webkit-linear-gradient(left, #91eae4, #86a8e7, #7f7fd5);
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+}

@@ -1,0 +1,12 @@
+var getCardListByType = function(cards, type) {
+  return cards.filter(function(card) {
+    return type.indexOf(card.type) > -1
+  })
+}
+
+var strSplit = function (str, seperator) {
+  return str.split(seperator)
+}
+
+module.exports.getCardListByType = getCardListByType
+module.exports.strSplit = strSplit

@@ -1,0 +1,5 @@
+<view class='container'>
+  <view class='image-container'>
+    <image mode="widthFix" class='image' src='../../images/boot-bg.gif' />
+  </view>
+</view>

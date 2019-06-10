@@ -1,0 +1,53 @@
+/* pages/other-card/other-card.wxss */
+
+page {
+  background-color: #f2f2f2;
+}
+
+#other-card-list {
+  background-color: #f2f2f2;
+  font-family: "Microsoft YaHei";
+  min-height: 1420rpx;
+}
+
+.line {
+  height: 2rpx;
+  background-color: inherit;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+#other-card-list .item {
+  display: flex;
+  flex-direction: row;
+  margin: 30rpx 40rpx;
+  padding: 20rpx 40rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+
+#other-card-list .item .icon {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 36rpx;
+  color: #fff;
+}
+
+#other-card-list .item .content {
+  margin-left: 30rpx;
+  text-align: left;
+}
+
+#other-card-list .content .title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #5c5c5c;
+}
+
+#other-card-list .content .desc {
+  font-size: 24rpx;
+  color: dimgrey;
+}

@@ -1,0 +1,62 @@
+<!--pages/other-card/other-card.wxml-->
+<view class='wrapper'>
+  <view id='other-card-list'>
+    <view class='line'></view>
+    <view class='item' bindtap='addCard' data-type="现金账户">
+      <view class='icon' style='background-color: #e91e63;'>现</view>
+      <view class='content'>
+        <text class='title'>现金账户\n</text>
+        <text class='desc'>您的现金账户，便捷的手工记账工具</text>
+      </view>
+    </view>
+    <view class='item' bindtap='addCard' data-type="在线支付账户">
+      <view class='icon' style='background-color: #ff9800;'>在</view>
+      <view class='content'>
+        <text class='title'>在线支付账户\n</text>
+        <text class='desc'>您的支付宝、微信、京东钱包等</text>
+      </view>
+    </view>
+    <view class='item' bindtap='addCard' data-type="储值账户">
+      <view class='icon' style='background-color: #ffc107;'>储</view>
+      <view class='content'>
+        <text class='title'>储值账户\n</text>
+        <text class='desc'>您的公交卡、购物卡、饭卡等</text>
+      </view>
+    </view>
+    <view class='item' bindtap='addCard' data-type="理财账户">
+      <view class='icon' style='background-color: #009688;'>理</view>
+      <view class='content'>
+        <text class='title'>理财账户\n</text>
+        <text class='desc'>您购买的各类基金账户</text>
+      </view>
+    </view>
+    <view class='item' bindtap='addCard' data-type="股票账户">
+      <view class='icon' style='background-color: #2196f3;'>股</view>
+      <view class='content'>
+        <text class='title'>股票账户\n</text>
+        <text class='desc'>您的各类股票基金</text>
+      </view>
+    </view>
+    <view class='item' bindtap='addCard' data-type="基金账户">
+      <view class='icon' style='background-color: #853bff;'>基</view>
+      <view class='content'>
+        <text class='title'>基金账户\n</text>
+        <text class='desc'>您购买的各类基金账户</text>
+      </view>
+    </view>
+    <view class='item' bindtap='addCard' data-type="负债账户">
+      <view class='icon' style='background-color: #ff01c2;'>负</view>
+      <view class='content'>
+        <text class='title'>负债账户\n</text>
+        <text class='desc'>您的负债</text>
+      </view>
+    </view>
+    <view class='item' bindtap='addCard' data-type="债权账户">
+      <view class='icon' style='background-color: #f44336;'>债</view>
+      <view class='content'>
+        <text class='title'>债权账户\n</text>
+        <text class='desc'>您的债权</text>
+      </view>
+    </view>
+  </view>
+</view>

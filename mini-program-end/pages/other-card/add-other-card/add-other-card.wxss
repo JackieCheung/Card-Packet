@@ -1,0 +1,113 @@
+/* pages/other-card/add-other-card/add-other-card.wxss */
+@import '../../../styles/common.wxss';
+
+.container {
+  padding: 40rpx;
+  background: rgb(246, 246, 246);
+  min-height: 1220rpx;
+  justify-content: unset;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.card {
+  font-family: "Microsoft YaHei";
+  width: 520rpx;
+  height: 300rpx;
+  margin-top: 30rpx;
+  margin-bottom: 60rpx;
+  padding: 30rpx;
+  position: relative;
+  border-radius: 30rpx;
+  box-shadow: 2rpx 4rpx 24rpx #ddd;
+  color: #fff;
+}
+
+.card .name {
+  position: absolute;
+  top: 40rpx;
+  left: 40rpx;
+  font-size: 32rpx;
+}
+
+.card .balance {
+  font-size: 32rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.card .balance .bigger-text {
+  font-size: 46rpx;
+}
+
+.card .balance .currency {
+  margin-left: 10rpx;
+}
+
+.card .balance .point {
+  margin: 0 10rpx;
+}
+
+.card .type {
+  position: absolute;
+  bottom: 40rpx;
+  left: 40rpx;
+  font-size: 32rpx;
+}
+
+.form-container {
+  width: 630rpx;
+  background: #fff;
+  padding: 20rpx;
+  border-radius: 30rpx;
+  margin-bottom: 60rpx;
+  box-shadow: 2rpx 4rpx 24rpx #ddd;
+}
+
+.form-container .item {
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+  line-height: 60rpx;
+  padding: 10rpx 20rpx;
+}
+
+.form-container .item .label {
+  display: inline-block;
+  font-weight: 600;
+  vertical-align: middle;
+  margin-right: 60rpx;
+}
+
+.form-container .item input {
+  vertical-align: middle;
+  display: inline-block;
+  min-width: 440rpx;
+}
+
+.text-gray {
+  color: #ccc;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 5rpx 0;
+  background-color: #00CED1;
+  color: #fff;
+  font-size: 32rpx;
+  border: none;
+  border-radius: 30rpx;
+}

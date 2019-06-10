@@ -1,0 +1,219 @@
+/**index.wxss**/
+@import '../../styles/common.wxss';
+
+.wrapper {
+  background: rgb(246, 246, 246);
+  font-family: "Microsoft YaHei";
+  padding-bottom: 60rpx;
+}
+
+.app-logo {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.login-button {
+  font-size: 24rpx;
+  padding: auto 6rpx;
+}
+
+.wrapper .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60rpx;
+}
+
+.userinfo .userinfo-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-bottom: 10rpx;
+}
+
+.userinfo .userinfo-nickname {
+  font-size: 36rpx;
+  line-height: 60rpx;
+  color: #808085;
+}
+
+.wrapper .card-container {
+  height: auto;
+  margin-top: 40rpx;
+  margin-bottom: 60rpx;
+}
+
+.card-container .title {
+  color: #5c5c5c;
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.card-container .title image {
+  width: 146rpx;
+  height: 10rpx;
+  position: relative;
+  top: -4rpx;
+}
+
+.card-container .title text {
+  margin: 0 40rpx;
+}
+
+.card-container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container .content swiper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container .card {
+  width: calc(100% - 160rpx);
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  border-radius: 30rpx;
+  padding: 40rpx 60rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  color: #fff;
+  box-shadow: 2rpx 4rpx 16rpx #686868;
+}
+
+.card .icon {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+  background-color: #fff;
+  margin-right: 32rpx;
+}
+
+.card .info {
+  text-align: left;
+}
+
+.card .info .name {
+  font-size: 40rpx;
+  letter-spacing: 10rpx;
+  font-weight: 500;
+}
+
+.card .info .type {
+  font-size: 28rpx;
+  letter-spacing: 10rpx;
+  font-weight: 300;
+}
+
+.card .number {
+  position: absolute;
+  bottom: 80rpx;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 40rpx;
+  letter-spacing: 2rpx;
+}
+
+.card-container .add-button {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 100%;
+  transition: transform ease-in 0.08s, box-shadow ease-in 0.05s;
+}
+
+.card-container .add-button:active {
+  transform: scale(0.88);
+  box-shadow: 0 4rpx 40rpx #59c8b1;
+}
+
+/* ******************************* */
+
+.text-white {
+  color: #fff !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.other-card .card {
+  width: 520rpx;
+  height: 300rpx;
+  margin: 30rpx auto 60rpx auto;
+  padding: 30rpx;
+  position: relative;
+  border-radius: 30rpx;
+  box-shadow: 2rpx 4rpx 24rpx #ddd;
+  color: #fff;
+}
+
+.other-card .card .name {
+  position: absolute;
+  top: 40rpx;
+  left: 40rpx;
+  font-size: 32rpx;
+}
+
+.other-card .card .balance {
+  font-size: 32rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.other-card .card .bigger-text {
+  font-size: 46rpx;
+}
+
+.other-card .card .currency {
+  margin-left: 10rpx;
+}
+
+.other-card .card .point {
+  margin: 0 10rpx;
+}
+
+.other-card .card .type {
+  position: absolute;
+  bottom: 40rpx;
+  left: 40rpx;
+  font-size: 32rpx;
+}
+
+view.no-card {
+  width: 80%;
+  margin: 40rpx auto;
+  text-align: center;
+}
+
+.no-card .image {
+  width: 360rpx;
+  height: 360rpx;
+}
+
+.no-card .no-card-tip {
+  font-size: 40rpx;
+  color: #666;
+  display: block;
+}
+
+.no-card .add-card-tip {
+  font-size: 32rpx;
+  color: #949494;
+  display: block;
+}

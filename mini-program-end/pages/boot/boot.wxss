@@ -1,0 +1,11 @@
+/* pages/boot/boot.wxss */
+.image-container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.image-container .image {
+  width: 90%;
+  margin: auto;
+}

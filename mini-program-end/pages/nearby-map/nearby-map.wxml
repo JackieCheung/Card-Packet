@@ -1,0 +1,19 @@
+<!--pages/nearby-map/nearby-map.wxml-->
+<view class="map_container">
+  <!--定义页面结构，可以使用地图组件也能使用其他组件 -->
+  <map
+      id="map"
+      longitude="{{longitude}}"
+      latitude="{{latitude}}"
+      scale="{{scale}}"
+      markers="{{markers}}"
+      show-location="{{showLocation}}"
+      include-points="{{includePoints}}"
+      enable-D="{{enable3D}}"
+      show-compass="{{showCompass}}"
+      enable-overlooking="{{enableOverlooking}}"
+      enable-zoom="{{enableZoom}}"
+      enable-scroll="{{enableScroll}}"
+      enable-rotate="{{enableRotate}}"
+      bindcallouttap="handleCalloutTap"></map>
+</view>

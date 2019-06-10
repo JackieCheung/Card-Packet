@@ -1,0 +1,33 @@
+<!--pages/other-card/add-other-card/add-other-card.wxml-->
+<wxs src="./add-other-card.wxs" module="tools" />
+<view class="container">
+  <view class="card {{config.bankNameMap[cardInfo.org] + '-bg'}}">
+    <text class='name d-block'>名称 <text style="font-size: 28rpx; margin-left: 20rpx;">{{cardInfo.name}}</text></text>
+    <view class='balance d-block'>
+      <text>余额</text>
+      <text class='currency bigger-text'>￥</text>
+      <text class='integer bigger-text'>{{tools.strSplit(cardInfo.balance + '', '.')[0] + ''}}</text>
+      <text class='point'>.</text>
+      <text class='decimal'>{{tools.strSplit(cardInfo.balance + '', '.')[1] || '00'}}</text>
+    </view>
+    <text class='type d-block'>{{cardInfo.org}}</text>
+  </view>
+
+  <view class='form-container'>
+    <form>
+      <view class='item'>
+        <text class='label'>名称</text>
+        <input bindinput='handleNameChange' placeholder="点击输入" placeholder-class="text-gray" value="{{cardInfo.name}}" />
+      </view>
+      <view class='item'>
+        <text class='label'>余额</text>
+        <input bindinput='handleBalanceChange' placeholder="点击输入" placeholder-class="text-gray" value="{{originbalance}}" type='digit' />
+      </view>
+      <view class='item'>
+        <text class='label'>备注</text>
+        <input bindinput='handleRemarkChange' placeholder="点击输入备注信息|选填" placeholder-class="text-gray" value="{{cardInfo.remark}}"/>
+      </view>
+    </form>
+  </view>
+  <button class='submit-btn' bindtap='saveOtherCard'>{{route.id ? '确定修改' : '确定添加'}}</button>
+</view>

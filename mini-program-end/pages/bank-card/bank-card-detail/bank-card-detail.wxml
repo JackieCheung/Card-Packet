@@ -1,0 +1,82 @@
+<!--index.wxml-->
+<view class='wrapper'>
+  <view class='card-container detail'>
+    <view class='title'>
+      <image src='../../../images/divider_l.png'></image>
+      <text>银行卡详情</text>
+      <image src='../../../images/divider_r.png'></image>
+    </view>
+    <view class='content'>
+      <view class='card'>
+        <view class="card-face container {{config.bankNameMap[cardInfo.org] ? config.bankNameMap[cardInfo.org] + '-bg' : 'default-bg'}}">
+          <view class='number item'>
+            <text class='label'>卡号：</text>
+            <text class='content'>{{cardInfo.number}}</text>
+          </view>
+          <view class='issuers item'>
+            <text class='label'>发卡行：</text>
+            <text class='content'>{{cardInfo.org}}</text>
+          </view>
+          <view class='type item'>
+            <text class='label'>卡片类型：</text>
+            <text class='content'>{{bankTypeEnum[cardInfo.type]}}</text>
+          </view>
+          <view class='exp item' wx:if="{{cardInfo.validDate}}">
+            <text class='label'>有效期：</text>
+            <text class='content'>{{cardInfo.validDate}}</text>
+          </view>
+          <view class='password item' style='margin-bottom: 0;'>
+            <text class='label'>密码：</text>
+            <text class='content'>{{cardInfo.password ? showPassword ? cardInfo.password : '******' : '无'}}</text>
+            <view class='btn-container' wx:if="{{cardInfo.password}}" bindtap='togglePasswordShow'>
+              <image src="{{showPassword ? '../../../images/eye.png' : '../../../images/uneye.png'}}" style='width: 40rpx; height: 40rpx; vertical-align: middle; margin-right: 30rpx;'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='content action'>
+      <view class='btn-group'>
+        <view class='item d-inline-block' bindtap='getNearbyMap' data-org='{{cardInfo.org}}'>
+          <view class='img'>
+            <image src='../../../images/ATM.png'></image>
+          </view>
+          <text class='text d-block'>附近的ATM</text>
+        </view>
+        <view class='item d-inline-block' bindtap='copyNumber' data-number='{{cardInfo.number}}'>
+          <view class='img'>
+            <image src='../../../images/copy.png'></image>
+          </view>
+          <text class='text d-block'>复制卡号</text>
+        </view>
+        <view class='item d-inline-block'>
+          <view class='img' bindtap="showDialogBtn">
+            <image src='../../../images/edit-password.png'></image>
+          </view>
+          <text class='text d-block'>修改密码</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">修改密码</view>
+  <view class="modal-content">
+    <view class="modal-input">
+      <text class='label d-inline-block'>新密码</text>
+      <input type="number" bindinput="changePass" value='{{newPass.value}}' password maxlength="6" class="input" placeholder="请输入新密码" focus></input>
+       <text class='error'>{{newPass.error}}</text> 
+    </view>
+    <view class="modal-input">
+      <text class='label d-inline-block'>确认新密码</text>
+      <input type="number" bindinput="changeConfirmPass" value='{{confirmPass.value}}' password maxlength="6" class="input" placeholder="请再次输入新密码"></input>
+       <text class='error'>{{confirmPass.error}}</text> 
+    </view>
+  </view>
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>
