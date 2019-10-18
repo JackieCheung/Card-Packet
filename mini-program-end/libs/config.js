@@ -3,13 +3,13 @@ const config = {
   baseUrl: 'http://192.168.1.100:8080/',
   // 高德地图配置文件
   amap: {
-    APIKey: '442958f9b0125578dce4929e5bed387d'
+    APIKey: 'xxxxx'
   },
   // 百度AI平台配置文件
   baiduAIP: {
-    AppID: '15900361',
-    APIKey: 'a90UGnQ9pqUNX2VFPkQGTF4r',
-    SecretKey: 'eg3hG1IU4GpRSMlodGYkx7Tnvea9UdxB'
+    AppID: 'xxxxx',
+    APIKey: 'xxxxx',
+    SecretKey: 'xxxxx'
   },
   bankNameMap: {
     '东莞农村商业银行': 'dgnongshanghang',
